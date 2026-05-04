@@ -1,48 +1,52 @@
-📝 SIGN UP TEST CASES
-
-## TC-SIGNUP-001 – Uğurlu qeydiyyat
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Sign up səhifəsinə keç
-  2. Ad daxil et
-  3. Email daxil et
-  4. Password daxil et
-  5. Sign up kliklə
-- **Expected Result:**
-  - Yeni user yaradılır
-  - Login və ya home səhifəyə yönləndirilir
+# SIGN IN MODULE TEST CASES
 
 ---
 
-## TC-SIGNUP-002 – Mövcud email ilə qeydiyyat
-- **Priority:** High  
-- **Type:** Negative  
-- **Steps:**
-  1. Sistemdə mövcud email daxil et
-  2. Digər sahələri doldur
-  3. Sign up kliklə
-- **Expected Result:**
-  - "Email already exists" mesajı çıxır
+## Test Case 4
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_SIGNIN_001 |
+| Modul | Sign In |
+| Test Case Adı | Yeni istifadəçi uğurla qeydiyyatdan keçir |
+| Priority | High |
+| Type | Positive |
+| Preconditions | Sayt açıq olmalıdır |
+| Steps | 1. Sign in səhifəsinə keç <br> 2. Username daxil et <br> 3. Email daxil et <br> 4. Password daxil et <br> 5. Register klik et |
+| Test Data | usertest / user@gmail.com / Test123 |
+| Expected Result | Hesab uğurla yaradılır |
+| Status | Not Run |
 
 ---
 
-## TC-SIGNUP-003 – Zəif password
-- **Priority:** Medium  
-- **Type:** Negative  
-- **Steps:**
-  1. Password sahəsinə `12345` yaz
-  2. Qeydiyyatı tamamla
-- **Expected Result:**
-  - Password validation error çıxır
+## Test Case 5
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_SIGNIN_002 |
+| Modul | Sign In |
+| Test Case Adı | Boş məlumatlarla qeydiyyat mümkün olmamalıdır |
+| Priority | High |
+| Type | Negative |
+| Preconditions | Sign in səhifəsi açıq olmalıdır |
+| Steps | 1. Sahələri boş saxla <br> 2. Register düyməsinə klik et |
+| Test Data | Empty |
+| Expected Result | Validation mesajları görünməlidir |
+| Status | Not Run |
 
 ---
 
-## TC-SIGNUP-004 – Boş sahələrlə qeydiyyat
-- **Priority:** High  
-- **Type:** Negative  
-- **Steps:**
-  1. Heç bir sahəni doldurma
-  2. Sign up kliklə
-- **Expected Result:**
-  - Required field error-lar göstərilir
+## Test Case 6
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_SIGNIN_003 |
+| Modul | Sign In |
+| Test Case Adı | Eyni email ilə ikinci dəfə qeydiyyat olmamalıdır |
+| Priority | Medium |
+| Type | Negative |
+| Preconditions | Email artıq sistemdə mövcuddur |
+| Steps | 1. Mövcud email daxil et <br> 2. Digər məlumatları yaz <br> 3. Register klik et |
+| Test Data | existing@gmail.com |
+| Expected Result | “Email already exists” mesajı görünməlidir |
+| Status | Not Run |
