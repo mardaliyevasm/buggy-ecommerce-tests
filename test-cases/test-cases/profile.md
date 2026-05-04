@@ -1,42 +1,52 @@
-👤 PROFILE TEST CASES
-
-## TC-PROFILE-001 – Profil məlumatlarına baxış
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Login ol
-  2. Profile səhifəsinə keç
-- **Expected Result:**
-  - User məlumatları düzgün göstərilir
+# PROFILE MODULU TEST CASES
 
 ---
 
-## TC-PROFILE-002 – Profil update
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Ad və ya digər məlumatı dəyiş
-  2. Save kliklə
-- **Expected Result:**
-  - Dəyişikliklər yadda saxlanılır
+## Test Case 10
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_PROFILE_001 |
+| Modul | Profile |
+| Test Case Adı | İstifadəçi profil məlumatlarını görə bilir |
+| Priority | Medium |
+| Type | Positive |
+| Preconditions | User login olmalıdır |
+| Steps | 1. Profile səhifəsinə keç |
+| Test Data | Valid user |
+| Expected Result | İstifadəçi məlumatları görünməlidir |
+| Status | Not Run |
 
 ---
 
-## TC-PROFILE-003 – Logout
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Logout kliklə
-- **Expected Result:**
-  - User sistemdən çıxır
-  - Login səhifəsinə yönləndirilir
+## Test Case 11
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_PROFILE_002 |
+| Modul | Profile |
+| Test Case Adı | Profil məlumatları yenilənir |
+| Priority | Medium |
+| Type | Positive |
+| Preconditions | User login olmalıdır |
+| Steps | 1. Profile edit et <br> 2. Save klik et |
+| Test Data | New username |
+| Expected Result | Yeni məlumat yadda saxlanmalıdır |
+| Status | Not Run |
 
 ---
 
-## TC-PROFILE-004 – Unauthorized access
-- **Priority:** High  
-- **Type:** Negative  
-- **Steps:**
-  1. Login olmadan profile URL aç
-- **Expected Result:**
-  - Login səhifəsinə redirect olunur
+## Test Case 12
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_PROFILE_003 |
+| Modul | Profile |
+| Test Case Adı | Login olmadan profile giriş mümkün olmamalıdır |
+| Priority | High |
+| Type | Negative |
+| Preconditions | User login olmamalıdır |
+| Steps | 1. Profile URL aç |
+| Test Data | — |
+| Expected Result | Login səhifəsinə yönləndirilməlidir |
+| Status | Not Run |
