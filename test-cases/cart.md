@@ -1,53 +1,52 @@
- 🛒 CART (SƏBƏT) TEST CASES
-
-## TC-CART-001 – Məhsulu səbətə əlavə etmə
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Home səhifəyə keç
-  2. Hər hansı məhsulu seç
-  3. "Add to cart" kliklə
-- **Expected Result:**
-  - Məhsul səbətə əlavə olunur
-  - Cart icon update olunur
+# SƏBƏT MODULU TEST CASES
 
 ---
 
-## TC-CART-002 – Eyni məhsulun sayını artırma
-- **Priority:** Medium  
-- **Type:** Positive  
-- **Steps:**
-  1. Eyni məhsulu 2 dəfə əlavə et
-- **Expected Result:**
-  - Quantity artır (məsələn: 2 olur)
+## Test Case 7
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_CART_001 |
+| Modul | Səbət |
+| Test Case Adı | Məhsul səbətə əlavə olunur |
+| Priority | High |
+| Type | Positive |
+| Preconditions | Məhsul mövcud olmalıdır |
+| Steps | 1. Məhsul seç <br> 2. Add to cart klik et |
+| Test Data | Any product |
+| Expected Result | Məhsul səbətdə görünməlidir |
+| Status | Not Run |
 
 ---
 
-## TC-CART-003 – Məhsulu səbətdən silmə
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Cart səhifəsinə keç
-  2. "Remove" kliklə
-- **Expected Result:**
-  - Məhsul səbətdən silinir
+## Test Case 8
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_CART_002 |
+| Modul | Səbət |
+| Test Case Adı | Məhsul səbətdən silinir |
+| Priority | Medium |
+| Type | Positive |
+| Preconditions | Səbətdə məhsul olmalıdır |
+| Steps | 1. Cart səhifəsinə keç <br> 2. Remove klik et |
+| Test Data | Existing cart product |
+| Expected Result | Məhsul səbətdən silinməlidir |
+| Status | Not Run |
 
 ---
 
-## TC-CART-004 – Boş səbət
-- **Priority:** Low  
-- **Type:** Edge Case  
-- **Steps:**
-  1. Cart səhifəsinə keç (boş halda)
-- **Expected Result:**
-  - "Cart is empty" mesajı çıxır
+## Test Case 9
 
----
-
-## TC-CART-005 – Login olmadan səbət
-- **Priority:** Medium  
-- **Type:** Edge Case  
-- **Steps:**
-  1. Login olmadan məhsul əlavə et
-- **Expected Result:**
-  - Guest cart işləyir və ya login tələb olunur
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_CART_003 |
+| Modul | Səbət |
+| Test Case Adı | Eyni məhsul bir neçə dəfə əlavə olunur |
+| Priority | Medium |
+| Type | Positive |
+| Preconditions | Məhsul mövcuddur |
+| Steps | 1. Eyni məhsulu bir neçə dəfə səbətə əlavə et |
+| Test Data | Same product |
+| Expected Result | Məhsul sayı düzgün artmalıdır |
+| Status | Not Run |
