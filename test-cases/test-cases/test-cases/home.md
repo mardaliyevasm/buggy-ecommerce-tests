@@ -1,49 +1,52 @@
-🏠 HOME PAGE TEST CASES
-
-## TC-HOME-001 – Məhsulların göstərilməsi
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Home səhifəni aç
-- **Expected Result:**
-  - Məhsullar list şəklində görünür
+# ƏSAS SƏHİFƏ MODULU TEST CASES
 
 ---
 
-## TC-HOME-002 – Məhsul detalına keçid
-- **Priority:** High  
-- **Type:** Positive  
-- **Steps:**
-  1. Hər hansı məhsula kliklə
-- **Expected Result:**
-  - Product detail səhifəsi açılır
+## Test Case 13
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_HOME_001 |
+| Modul | Əsas səhifə |
+| Test Case Adı | Ana səhifə düzgün açılır |
+| Priority | High |
+| Type | Positive |
+| Preconditions | Sayt işlək olmalıdır |
+| Steps | 1. Saytı aç |
+| Test Data | — |
+| Expected Result | Ana səhifə problemsiz açılmalıdır |
+| Status | Not Run |
 
 ---
 
-## TC-HOME-003 – Search funksiyası
-- **Priority:** Medium  
-- **Type:** Positive  
-- **Steps:**
-  1. Search input-a məhsul adı yaz
-- **Expected Result:**
-  - Uyğun nəticələr filtr olunur
+## Test Case 14
+
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_HOME_002 |
+| Modul | Əsas səhifə |
+| Test Case Adı | Məhsullar əsas səhifədə görünür |
+| Priority | Medium |
+| Type | Positive |
+| Preconditions | Sayt açıq olmalıdır |
+| Steps | 1. Home səhifəsinə daxil ol |
+| Test Data | — |
+| Expected Result | Məhsul siyahısı görünməlidir |
+| Status | Not Run |
 
 ---
 
-## TC-HOME-004 – Responsiveness test
-- **Priority:** Medium  
-- **Type:** UI  
-- **Steps:**
-  1. Saytı mobil ölçüdə aç
-- **Expected Result:**
-  - UI düzgün uyğunlaşır
+## Test Case 15
 
----
-
-## TC-HOME-005 – Səhifə yüklənmə performansı
-- **Priority:** Low  
-- **Type:** Performance  
-- **Steps:**
-  1. Home səhifəni aç
-- **Expected Result:**
-  - Səhifə 3 saniyədən tez yüklənir
+| Field | Məlumat |
+|---|---|
+| Test Case ID | TC_HOME_003 |
+| Modul | Əsas səhifə |
+| Test Case Adı | Məhsula klik etdikdə detal səhifəsi açılır |
+| Priority | High |
+| Type | Positive |
+| Preconditions | Məhsullar görünməlidir |
+| Steps | 1. Hər hansı məhsula klik et |
+| Test Data | Any product |
+| Expected Result | Məhsul detal səhifəsi açılmalıdır |
+| Status | Not Run |
